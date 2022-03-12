@@ -6,7 +6,7 @@ import type { AppProps } from 'next/app';
 import type { AppRouter } from '@/server/routers/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
-	console.log('env', process.env.VERCEL_URL);
+	console.log('env', process.env.NEXT_PUBLIC_VERCEL_URL);
 	return <Component {...pageProps} />;
 }
 
@@ -16,8 +16,8 @@ export default withTRPC<AppRouter>({
 		 * If you want to use SSR, you need to use the server's full URL
 		 * @link https://trpc.io/docs/ssr
 		 */
-		const url = process.env.VERCEL_URL
-			? `https://${process.env.VERCEL_URL}/api/trpc`
+		const url = process.env.NEXT_PUBLIC_VERCEL_URL
+			? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/trpc`
 			: 'http://localhost:3000/api/trpc';
 
 		return {
