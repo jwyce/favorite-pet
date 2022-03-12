@@ -6,6 +6,7 @@ import type { AppProps } from 'next/app';
 import type { AppRouter } from '@/server/routers/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
+	console.log('env', process.env.VERCEL_URL);
 	return <Component {...pageProps} />;
 }
 
