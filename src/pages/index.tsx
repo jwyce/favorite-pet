@@ -66,6 +66,10 @@ const Home: NextPage = () => {
 				<Link href="/results">
 					<a>Results</a>
 				</Link>
+				<span className="my-4">{' - '}</span>
+				<Link href="/about">
+					<a>About</a>
+				</Link>
 			</div>
 		</div>
 	);
