@@ -1,4 +1,4 @@
-const MAX_PET_ID = 89;
+const MAX_PET_ID = 81;
 
 export const getRandomPet = (notThisOne?: number): number => {
 	const petNumber = Math.floor(Math.random() * MAX_PET_ID) + 1;
