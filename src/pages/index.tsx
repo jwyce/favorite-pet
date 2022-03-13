@@ -62,13 +62,9 @@ const Home: NextPage = () => {
 			{(!petPair || fetchingNext) && <img src="/rings.svg" className="w-48" />}
 			<div className="w-full text-xl text-center pb-2">
 				<a href="https://github.com/jwyce">GitHub</a>
-				<span className="my-4">{'-'}</span>
+				<span className="my-4">{' - '}</span>
 				<Link href="/results">
 					<a>Results</a>
-				</Link>
-				<span className="my-4">{'-'}</span>
-				<Link href="/about">
-					<a>About</a>
 				</Link>
 			</div>
 		</div>
